@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double meal_cost,tip,tax;
+    int tip_percent,tax_percent,total_cost;
+    scanf("%lf",&meal_cost);
+    scanf("%d",&tip_percent);
+    scanf("%d",&tax_percent);
+    
+    tip=meal_cost*(double)tip_percent/100;
+    tax=meal_cost*(double)tax_percent/100;
+    
+    total_cost=(int) round(meal_cost+tip+tax);
+    printf("%d",total_cost);
+    
+    
+}
